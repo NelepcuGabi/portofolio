@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
+import { Particles } from "./Particles"
 import { FaPython, FaReact, FaDatabase, FaServer, FaCode, FaHtml5, FaCss3Alt, FaGitAlt } from "react-icons/fa"
-
 const technologies = [
     { name: "Python", icon: <FaPython />, color: "text-yellow-400" },
     { name: "React", icon: <FaReact />, color: "text-blue-400" },
@@ -51,19 +51,6 @@ hello_world()`
 
 export default function Header() {
     const [currentTech, setCurrentTech] = useState(0)
-    const [windowSize, setWindowSize] = useState({ width: 1000, height: 1000 })
-
-    useEffect(() => {
-        const handleResize = () => {
-            setWindowSize({
-                width: window.innerWidth,
-                height: window.innerHeight,
-            })
-        }
-        handleResize() // Set initial size
-        window.addEventListener('resize', handleResize)
-        return () => window.removeEventListener('resize', handleResize)
-    }, [])
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -81,21 +68,7 @@ export default function Header() {
 
     return (
         <header className="min-h-screen flex flex-col justify-center items-center relative overflow-hidden py-20">
-            {technologies.map((tech, index) => (
-                <motion.div
-                    key={tech.name}
-                    className={`absolute text-4xl ${tech.color} opacity-20`}
-                    initial={{ x: Math.random() * windowSize.width, y: Math.random() * windowSize.height }}
-                    animate={{
-                        x: Math.random() * windowSize.width,
-                        y: Math.random() * windowSize.height,
-                        rotate: 360,
-                    }}
-                    transition={{ duration: 20, repeat: Number.POSITIVE_INFINITY, repeatType: "reverse" }}
-                >
-                    {tech.icon}
-                </motion.div>
-            ))}
+            <Particles className="absolute inset-0" />
 
             <div className="relative z-10 text-center">
                 <motion.h1
