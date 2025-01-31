@@ -70,6 +70,7 @@ export default function Header() {
         <header className="min-h-screen flex flex-col justify-center items-center relative overflow-hidden py-20">
             <Particles className="absolute inset-0" />
 
+
             <div className="relative z-10 text-center">
                 <motion.h1
                     initial={{ opacity: 0, y: -20 }}
