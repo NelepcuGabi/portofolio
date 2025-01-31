@@ -15,14 +15,14 @@ const projects = [
     name: "E-commerce",
     description: "Full-featured e-commerce platform.",
     url: "https://github.com/NelepcuGabi/e-commerce",
-    tech: ["Node.js", "Express", "MongoDB"],
+    tech: ["Python", "Django", "MongoDB"],
   },
   {
     name: "CodeNetHub",
     description: "Advanced coding platform for learning and collaboration.",
     url: "https://github.com/NelepcuGabi/backend",
     live: "https://codenethub.telacad.ro",
-    tech: ["Python", "Django", "MongoDB"],
+    tech: ["Javascript", "NodeJS", "MongoDB"],
   },
 ]
 
