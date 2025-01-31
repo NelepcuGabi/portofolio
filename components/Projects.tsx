@@ -15,14 +15,14 @@ const projects = [
   {
     name: "E-commerce Platform",
     description:
-        "I have made this  project to create a simple e-commerce platform. This is helping me learn about handling user authentication, managing products, and processing orders.",
+        "I have made this  project to create a simple e-commerce platform. This helped me learn about handling user authentication, managing products, and processing orders.",
     url: "https://github.com/NelepcuGabi/e-commerce",
     tech: ["Python", "Django", "MongoDB"],
   },
   {
     name: "CodeNetHub",
     description:
-        "A collaborative project I've contributed to, focused on creating a platform for coding education. This project has expanded my skills in working with larger codebases and team collaboration.",
+        "A collaborative project I've contributed to, focused on creating a platform for coding education. This project has expanded my skills in working with larger codebases and team collaboration.It was made for TelecomAcademy.",
     url: "https://github.com/NelepcuGabi/backend",
     live: "https://codenethub.telacad.ro",
     tech: ["NodeJS", "Express", "MongoDB"],
