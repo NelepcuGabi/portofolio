@@ -20,11 +20,12 @@ export default function Header() {
   }, [])
 
   return (
-    <header className="py-20 text-center">
-      <h1 className="text-6xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600 animate-pulse">
-        {text}
-      </h1>
-    </header>
+      <header className="py-20 text-center">
+        <h1 className="text-6xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600 animate-pulse">
+          {text}
+        </h1>
+        <p className="text-2xl text-gray-300">Aspiring Python Developer | Eager to Learn & Grow</p>
+      </header>
   )
 }
 
