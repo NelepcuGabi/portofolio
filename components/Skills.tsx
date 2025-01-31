@@ -9,6 +9,7 @@ const skills = [
   { name: "JavaScript", icon: FaJs },
   { name: "Django", icon: SiDjango },
     {name: "SQL", icon: FaDatabase },
+    {name:"MongoDB", icon: FaDatabase },
 ]
 
 export default function Skills() {
