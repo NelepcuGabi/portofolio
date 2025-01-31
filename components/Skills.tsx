@@ -1,4 +1,4 @@
-import { FaPython, FaGitAlt, FaNodeJs, FaJs } from "react-icons/fa"
+import { FaPython, FaGitAlt, FaNodeJs, FaJs,FaDatabase } from "react-icons/fa"
 import { SiFlask, SiDjango } from "react-icons/si"
 
 const skills = [
@@ -8,6 +8,7 @@ const skills = [
   { name: "Node.js", icon: FaNodeJs },
   { name: "JavaScript", icon: FaJs },
   { name: "Django", icon: SiDjango },
+    {name: "SQL", icon: FaDatabase },
 ]
 
 export default function Skills() {
