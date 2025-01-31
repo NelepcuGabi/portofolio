@@ -51,6 +51,19 @@ hello_world()`
 
 export default function Header() {
     const [currentTech, setCurrentTech] = useState(0)
+    const [windowSize, setWindowSize] = useState({ width: 1000, height: 1000 })
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowSize({
+                width: window.innerWidth,
+                height: window.innerHeight,
+            })
+        }
+        handleResize() // Set initial size
+        window.addEventListener('resize', handleResize)
+        return () => window.removeEventListener('resize', handleResize)
+    }, [])
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -59,8 +72,11 @@ export default function Header() {
         return () => clearInterval(interval)
     }, [])
 
-    const scrollToSection = () => {
-        document.getElementById("about").scrollIntoView({ behavior: "smooth" })
+    const scrollToSection = (sectionId:any) => {
+        const element = document.getElementById(sectionId)
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" })
+        }
     }
 
     return (
@@ -69,10 +85,10 @@ export default function Header() {
                 <motion.div
                     key={tech.name}
                     className={`absolute text-4xl ${tech.color} opacity-20`}
-                    initial={{ x: Math.random() * window.innerWidth, y: Math.random() * window.innerHeight }}
+                    initial={{ x: Math.random() * windowSize.width, y: Math.random() * windowSize.height }}
                     animate={{
-                        x: Math.random() * window.innerWidth,
-                        y: Math.random() * window.innerHeight,
+                        x: Math.random() * windowSize.width,
+                        y: Math.random() * windowSize.height,
                         rotate: 360,
                     }}
                     transition={{ duration: 20, repeat: Number.POSITIVE_INFINITY, repeatType: "reverse" }}
@@ -125,7 +141,7 @@ export default function Header() {
                     className="mt-12"
                 >
                     <button
-                        onClick={scrollToSection}
+                        onClick={() => scrollToSection("about")}
                         className="px-6 py-3 bg-purple-600 text-white rounded-full font-semibold hover:bg-purple-700 transition duration-300"
                     >
                         Explore My Journey
