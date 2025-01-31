@@ -1,6 +1,11 @@
+"use client"
 import Image from "next/image"
 
 export default function About() {
+  const scrollToSection = (sectionId) => {
+    document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" })
+  }
+
   return (
       <section id="about" className="relative min-h-screen flex items-center py-20">
         <div className="absolute inset-0 bg-gradient-to-r from-red-500/10 to-purple-500/10 rounded-3xl blur-3xl -z-10" />
@@ -21,18 +26,18 @@ export default function About() {
               project.
             </p>
             <div className="flex gap-4">
-              <a
-                  href="#projects"
+              <button
+                  onClick={() => scrollToSection("projects")}
                   className="px-6 py-3 bg-gradient-to-r from-red-500 to-purple-500 rounded-xl text-white font-semibold hover:from-red-600 hover:to-purple-600 transition-all duration-300"
               >
                 View Projects
-              </a>
-              <a
-                  href="#contact"
+              </button>
+              <button
+                  onClick={() => scrollToSection("contact")}
                   className="px-6 py-3 bg-gray-800/50 rounded-xl text-white font-semibold hover:bg-gray-800/70 transition-all duration-300 backdrop-blur-sm"
               >
                 Connect With Me
-              </a>
+              </button>
             </div>
           </div>
           <div className="relative">
@@ -52,4 +57,3 @@ export default function About() {
       </section>
   )
 }
-
