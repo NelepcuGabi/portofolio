@@ -3,7 +3,7 @@ import { MetadataRoute } from 'next'
 export default function sitemap(): MetadataRoute.Sitemap {
     return [
         {
-            url: 'https://gabrielnelepcu.ro',
+            url: 'https://www.gabrielnelepcu.ro',
             lastModified: new Date(),
             changeFrequency: 'yearly',
             priority: 1,
