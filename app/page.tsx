@@ -26,6 +26,7 @@ export default function Home() {
           `,
                 }}
             />
+            <meta name="google-site-verification" content="1t6wkuxm8ZLGZjU44Q9lUUUsQRrNOeAsyBgZuPtoHac" />
             <div className="container mx-auto px-4 py-8">
                 <Header />
                 <About />
