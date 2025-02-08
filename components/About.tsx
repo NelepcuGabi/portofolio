@@ -1,4 +1,3 @@
-
 "use client"
 import Image from "next/image"
 
@@ -19,9 +18,7 @@ export default function About() {
               About Me
             </h2>
             <p className="text-xl leading-relaxed text-gray-300">
-              As an enthusiastic beginner Python developer, I'm on an exciting journey to master the art of coding. My
-              passion for problem-solving and creating efficient solutions drives me to continuously learn and improve my
-              skills in Python, Flask, and web development.
+              As a beginner web developer, I'm on an exciting journey to master both frontend and backend technologies. I enjoy creating intuitive user interfaces, developing backend systems, and even building small programs in Python to automate tasks.
             </p>
             <p className="text-xl leading-relaxed text-gray-300">
               While I'm new to the world of freelancing, I'm eager to take on challenges that will help me grow. I believe
@@ -49,7 +46,7 @@ export default function About() {
             <div className="relative aspect-[3/4] w-full max-w-[400px] mx-auto">
               <Image
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202024-11-01%20at%2011.01.14_b466a3b9.jpg-arrwKvyAGocQPgVcyda6QQtg8kK7GG.jpeg"
-                  alt="Gabriel Nelepcus - Aspiring Python Developer"
+                  alt="Gabriel Nelepcus - Aspiring Web Developer"
                   fill
                   priority
                   className="object-cover rounded-2xl shadow-2xl"

@@ -1,5 +1,5 @@
 import { FaPython, FaGitAlt, FaNodeJs, FaJs,FaDatabase } from "react-icons/fa"
-import { SiFlask, SiDjango, SiMongodb } from "react-icons/si"
+import { SiFlask, SiDjango, SiMongodb,SiNextdotjs } from "react-icons/si"
 
 const skills = [
     {
@@ -14,6 +14,7 @@ const skills = [
     { name: "Node.js", icon: FaNodeJs, description: "Interested in learning for full-stack capabilities" },
     { name: "MongoDB", icon: SiMongodb, description: "Eager to learn about NoSQL databases" },
     { name: "SQL", icon: FaDatabase, description: "Learned it for relational database management" },
+    {name:"Next",icon:SiNextdotjs,description: "Learning to make more engaging frontend"}
 ]
 
 export default function Skills() {

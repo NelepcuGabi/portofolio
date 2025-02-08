@@ -87,7 +87,7 @@ export default function Header() {
                     transition={{ duration: 0.5, delay: 0.2 }}
                     className="text-2xl text-gray-300 mb-8"
                 >
-                    Aspiring Developer | Passionate Learner
+                    Aspiring Web Developer | Passionate Learner
                 </motion.p>
 
                 <div className="flex justify-center space-x-4 mb-8">
