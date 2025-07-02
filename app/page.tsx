@@ -1,4 +1,4 @@
-"use client"
+
 import Header from "@/components/Header"
 import About from "@/components/About"
 import Projects from "@/components/Projects"
@@ -8,7 +8,7 @@ import { Particles } from "@/components/Particles"
 import Script from 'next/script'
 
 export function Home() {
-    // @ts-ignore
+
     return (
         <main className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white">
             <Particles className="absolute inset-0 -z-10"/>
