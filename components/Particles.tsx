@@ -55,3 +55,5 @@ export function Particles({ className = "" }: ParticlesProps) {
       </div>
   )
 }
+
+export default Particles;

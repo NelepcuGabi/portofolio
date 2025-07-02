@@ -3,7 +3,7 @@ import About from "@/components/About"
 import Projects from "@/components/Projects"
 import Skills from "@/components/Skills"
 import Contact from "@/components/Contact"
-import { Particles } from "@/components/Particles"
+import Particles from "@/components/Particles"
 import Script from 'next/script'
 
 export default function Home() {

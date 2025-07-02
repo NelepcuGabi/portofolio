@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { Particles } from "./Particles"
+import Particles from "./Particles"
 import { FaPython, FaReact, FaDatabase, FaServer, FaCode, FaHtml5, FaCss3Alt, FaGitAlt } from "react-icons/fa"
 const technologies = [
     { name: "Python", icon: <FaPython />, color: "text-yellow-400" },
