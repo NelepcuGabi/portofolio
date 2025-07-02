@@ -6,6 +6,13 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"
 
 const projects = [
   {
+    name: "Bachelors Thesis: Hand Gesture Recognition Application Using OpenCV and Neural Networks",
+    description:
+    "Developed a real-time hand gesture recognition system in Python using OpenCV, MediaPipe, and deep learning models (CNN and LSTM). The application detects and classifies both static and dynamic hand gestures via webcam, with left/right hand labeling and gesture-to-action mapping. Users can define custom gestures and associate them with specific actions (e.g., volume control, media playback, application commands). The system allows continuous improvement by storing unknown gestures for future retraining and includes a terminal-based interface for gesture recording, training, and testing.",
+    url: "https://github.com/NelepcuGabi/licenta.git",
+    tech: ["Python", "OpenCV", "MediaPipe", "Pytorch"],
+  },
+  {
     name: "Library Management System",
     description:
         "A beginner-friendly library management system built with Python and Flask. This project helped me understand the basics of backend development and API creation.",
