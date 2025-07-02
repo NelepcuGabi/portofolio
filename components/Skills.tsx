@@ -1,3 +1,4 @@
+"use client"
 import { FaPython, FaGitAlt, FaNodeJs, FaJs,FaDatabase } from "react-icons/fa"
 import { SiFlask, SiDjango, SiMongodb,SiNextdotjs } from "react-icons/si"
 
