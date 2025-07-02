@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header"
 import About from "@/components/About"
 import Projects from "@/components/Projects"
@@ -7,7 +6,7 @@ import Contact from "@/components/Contact"
 import { Particles } from "@/components/Particles"
 import Script from 'next/script'
 
-export function Home() {
+export default function Home() {
 
     return (
         <main className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white">
