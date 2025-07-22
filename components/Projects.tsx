@@ -35,7 +35,7 @@ const projects = [
   },{
     name: "Learn With Corina",
     description:
-        "My first live project for a dear friend of mine. I made her this website to help her grow and gain exposure for her english academy It is made in NExtJS,being a frontend project. " +
+        "My first live project for a dear friend of mine. I made her this website to help her grow and gain exposure for her english academy It is made in NextJS,being a frontend project. " +
         "I hope in the future I will have more complex projects to make for her. Check it out"
     ,
     url: "https://github.com/NelepcuGabi/backend",
