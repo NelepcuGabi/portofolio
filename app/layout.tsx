@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description:
         "Portfolio of Gabriel Nelepcu, Python developer focused on backend development, web apps, and freelancing. Check out my projects and coding journey.",
     keywords:
-        "Python, web developer, backend developer, freelancer, Next.js, React, portfolio, Gabriel Nelepcu, AI projects, programming, software engineer",
+        "Python, web developer, backend developer,frontend developer, frontend, freelancer, Next.js, React, portfolio, Gabriel Nelepcu, AI projects, programming, software engineer",
     authors: [{ name: "Gabriel Nelepcu", url: "https://gabrielnepcu.com" }],
     creator: "Gabriel Nelepcu",
     openGraph: {
