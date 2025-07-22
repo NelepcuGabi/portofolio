@@ -31,8 +31,16 @@ const projects = [
     description:
         "A collaborative project I've contributed to, focused on creating a platform for coding education. This project has expanded my skills in working with larger codebases and team collaboration.It was made for TelecomAcademy.",
     url: "https://github.com/NelepcuGabi/backend",
-    live: "https://codenethub.telacad.ro",
     tech: ["NodeJS", "Express", "MongoDB"],
+  },{
+    name: "Learn With Corina",
+    description:
+        "My first live project for a dear friend of mine. I made her this website to help her grow and gain exposure for her english academy It is made in NExtJS,being a frontend project. " +
+        "I hope in the future I will have more complex projects to make for her. Check it out"
+    ,
+    url: "https://github.com/NelepcuGabi/backend",
+    live:"https://site-meditatii.vercel.app/",
+    tech: ["NextJS"],
   },
 ]
 
@@ -80,7 +88,7 @@ export default function Projects() {
                             className="flex items-center gap-2 text-white hover:text-purple-400 transition-colors"
                         >
                           <FaExternalLinkAlt className="text-xl" />
-                          <span>Live Demo</span>
+                          <span>Live</span>
                         </Link>
                     )}
                   </div>
