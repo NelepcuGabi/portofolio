@@ -1,5 +1,6 @@
 "use client"
 import Image from "next/image"
+import { motion } from "framer-motion"
 
 export default function About() {
   const scrollToSection = (sectionId: string) => {
@@ -12,19 +13,23 @@ export default function About() {
   return (
       <section id="about" className="relative min-h-screen flex items-center py-20">
         <div className="absolute inset-0 bg-gradient-to-r from-red-500/10 to-purple-500/10 rounded-3xl blur-3xl -z-10" />
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
+        <div className="grid md:grid-cols-2 gap-12 items-center w-full">
+          {/* Text - Apare din stânga */}
+          <motion.div
+              initial={{ x: -100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ once: true }}
+              className="space-y-6"
+          >
             <h2 className="text-4xl font-bold bg-gradient-to-r from-red-400 to-purple-400 text-transparent bg-clip-text">
               About Me
             </h2>
             <p className="text-xl leading-relaxed text-gray-300">
-              As a beginner web developer, I'm on an exciting journey to master both frontend and backend technologies. I enjoy creating intuitive user interfaces, developing backend systems, and even building small programs in Python to automate tasks.
+              As a beginner web developer, I'm on an exciting journey to master both frontend and backend technologies...
             </p>
             <p className="text-xl leading-relaxed text-gray-300">
-              While I'm new to the world of freelancing, I'm eager to take on challenges that will help me grow. I believe
-              in the power of hard work, dedication, and continuous learning. My goal is to evolve into a skilled
-              developer and eventually venture into freelancing, bringing fresh perspectives and innovative ideas to every
-              project.
+              While I'm new to the world of freelancing, I'm eager to take on challenges that will help me grow...
             </p>
             <div className="flex gap-4">
               <button
@@ -40,8 +45,16 @@ export default function About() {
                 Connect With Me
               </button>
             </div>
-          </div>
-          <div className="relative">
+          </motion.div>
+
+          {/* Imaginea - Apare din dreapta */}
+          <motion.div
+              initial={{ x: 100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+              viewport={{ once: true }}
+              className="relative"
+          >
             <div className="absolute inset-0 bg-gradient-to-r from-red-500/20 to-purple-500/20 rounded-3xl blur-3xl" />
             <div className="relative aspect-[3/4] w-full max-w-[400px] mx-auto">
               <Image
@@ -53,7 +66,7 @@ export default function About() {
                   sizes="(max-width: 768px) 100vw, 400px"
               />
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
   )
