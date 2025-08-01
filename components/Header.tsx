@@ -120,6 +120,14 @@ export default function Header() {
                     >
                         Explore My Journey
                     </button>
+                    <a href="https://www.fiverr.com/s/m5EZ8Xb">
+                    <button
+
+                        className="px-6 py-3 bg-purple-600 text-white rounded-full font-semibold hover:bg-purple-700 transition duration-300"
+                    >
+                        Check out my Fiverr
+                    </button>
+                    </a>
                 </motion.div>
             </div>
         </header>
